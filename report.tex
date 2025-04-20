@@ -1,0 +1,236 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{float}
+\graphicspath{{assets/}}
+\geometry{margin=1in}
+\setstretch{1.25}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \Huge
+    \textbf{Jaypee Institute of Information Technology, Sector - 62, Noida} \\
+    \vspace{0.5cm}
+    \Large
+    \textbf{B.Tech CSE II Semester} \\
+    \vspace{1cm}
+    \vspace*{\fill}
+    \includegraphics[scale=2]{jiit_logo} \\
+    \vspace{1.5cm}
+    \Huge
+    \textbf{Physics 2 PBL Report} \\
+    \Large
+    \textbf{Title : Quantum Statistics} \\
+    \vspace{1cm}
+    \Large
+    \textbf{Submitted to} \\
+    \textbf{Dr. Navneet Kumar Sharma}\\
+    \vspace{1cm}
+    \textbf{Submitted by} \\
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Mukul Aggarwal & 2401030239 \\
+    \end{tabular} \\
+    \vspace{0.5cm}
+    \textbf{Course Code: PHY102} \\
+    \textbf{Course Name: Physics 2} \\
+    \textbf{Batch: CSE-24} \\
+    \vspace*{\fill}
+    \normalsize
+\end{titlepage}
+
+% Letter of Transmittal
+\begin{center}
+    \Large\textbf{Letter of Transmittal}
+\end{center}
+\vspace{1cm}
+
+\noindent
+Navneet Kumar Sharma \\
+Department of PMSE \\
+Jaypee Institute of Information Technology \\
+Sector - 62, Noida \\
+
+\vspace{1cm}
+
+\noindent
+\textbf{Subject:} Submission of Report on \textquotedblleft Quantum Statistics\textquotedblright \\
+
+\vspace{1cm}
+
+\noindent
+Dear Sir, \\
+
+\vspace{1em}
+
+\noindent
+We are pleased to submit our report titled \textit{Quantum Statistics}, which explores the fundamental principles and statistical frameworks of particle behavior under quantum mechanical systems. This report includes detailed analysis of the types of quantum statistics, their mathematical derivations, applications in real-world scenarios, and a comparative study with classical statistics.\\
+
+\vspace{2em}
+\noindent
+Sincerely, \\
+\vspace{1em}
+\noindent
+\begin{tabular}{rl}
+    Mukul Aggarwal & 2401030239 \\
+\end{tabular}
+
+\newpage
+\tableofcontents
+\newpage
+
+% Sections
+
+\section{Introduction}
+Quantum statistics is a foundational pillar of modern physics, offering deep insight into how particles behave at the microscopic scale, particularly when quantum mechanical effects dominate. It addresses the statistical distributions that govern the occupancy of quantum states by particles such as electrons, photons, and atoms. Unlike classical statistics, which assumes distinguishable particles and continuous energy levels, quantum statistics accounts for the discrete nature of energy levels and the indistinguishability of particles, leading to fundamentally different behavior at low temperatures or high particle densities. This report delves into the different types of quantum statistics—Fermi-Dirac, Bose-Einstein, and Maxwell-Boltzmann—and explains their theoretical foundations, implications, and applications in both fundamental physics and advanced technologies like quantum computing, superconductivity, and astrophysics.
+
+\section{Mathematical Foundations}
+\subsection{Basic Concepts}
+The mathematical foundation of quantum statistics rests on principles of quantum mechanics such as:
+\begin{itemize}
+    \item \textbf{Quantum States and Wavefunctions}: Each particle is described by a wavefunction, and all measurable quantities are derived from these wavefunctions.
+    \item \textbf{Operators and Eigenvalues}: Observables are associated with operators, and physical values are obtained from the operator's eigenvalues.
+    \item \textbf{Probability Amplitudes and Expectation Values}: Probabilities in quantum mechanics arise from the square of wavefunction amplitudes, and average values are computed using expectation values.
+\end{itemize}
+
+\subsection{Density of States and Partition Function}
+The density of states $g(E)$ refers to the number of available quantum states per unit energy range and is crucial for determining statistical properties. The partition function $Z$ is a sum over all possible states, weighted by the Boltzmann factor, and it serves as the cornerstone for deriving thermodynamic quantities:
+\begin{equation}
+Z = \sum_i e^{-E_i / kT}
+\end{equation}
+This allows calculation of average energy, entropy, and other quantities vital for understanding macroscopic behavior arising from microscopic rules.
+
+\section{Classification of Particles}
+All particles in nature fall into two major categories based on their intrinsic spin:
+\begin{itemize}
+    \item \textbf{Fermions}: These have half-integer spins (e.g., $\frac{1}{2}, \frac{3}{2}$) and obey the Pauli Exclusion Principle, which states that no two identical fermions can occupy the same quantum state simultaneously. Examples include electrons, protons, and neutrons.
+    \item \textbf{Bosons}: These particles have integer spins (e.g., 0, 1, 2) and do not follow the exclusion principle. Multiple bosons can exist in the same quantum state, enabling unique phenomena like Bose-Einstein condensation. Examples include photons, gluons, and helium-4 atoms.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fermions.png}
+    \caption{Fermions and bosons}
+\end{figure}
+
+\section{Fermi-Dirac Statistics}
+\subsection{Definition}
+Fermi-Dirac statistics governs systems composed of indistinguishable fermions. Due to the Pauli Exclusion Principle, the probability of more than one fermion occupying a single quantum state is zero. This restriction creates degenerate pressure, even in the absence of thermal energy.
+
+\subsection{Distribution Function}
+The Fermi-Dirac distribution function gives the average number of fermions occupying a state with energy $E$:
+\begin{equation}
+f(E) = \frac{1}{e^{(E - \mu)/kT} + 1}
+\end{equation}
+Here, $\mu$ is the chemical potential, $k$ is the Boltzmann constant, and $T$ is the absolute temperature.
+
+\subsection{Applications}
+\begin{itemize}
+    \item \textbf{Metals and Semiconductors}: The electron distribution in conduction bands follows Fermi-Dirac statistics, determining electrical and thermal properties.
+    \item \textbf{Astrophysics}: In white dwarfs and neutron stars, degenerate fermion pressure supports the star against gravitational collapse.
+    \item \textbf{Quantum Dots and Nanostructures}: Electron occupancy and tunneling behavior are accurately modeled using Fermi-Dirac distributions.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{app.png}
+    \caption{applications}
+\end{figure}
+
+\section{Bose-Einstein Statistics}
+\subsection{Definition}
+Bose-Einstein statistics applies to bosons, particles that do not obey the exclusion principle. Bosons exhibit a tendency to occupy the same quantum state, leading to fascinating collective phenomena at very low temperatures.
+
+\subsection{Distribution Function}
+The average number of bosons in a state with energy $E$ is given by:
+\begin{equation}
+f(E) = \frac{1}{e^{(E - \mu)/kT} - 1}
+\end{equation}
+This function diverges as $E$ approaches $\mu$, which allows for the accumulation of particles in the lowest energy state, a precursor to Bose-Einstein condensation.
+
+\subsection{Applications}
+\begin{itemize}
+    \item \textbf{Laser Physics}: Photons, as bosons, can populate the same energy state, resulting in coherent light emission.
+    \item \textbf{Superfluidity and BEC}: Helium-4 becomes superfluid below 2.17 K due to Bose-Einstein condensation. Artificial BECs in ultra-cold gases are used to study macroscopic quantum phenomena.
+    \item \textbf{Blackbody Radiation}: Planck's radiation law is derived using Bose-Einstein statistics.
+\end{itemize}
+
+\section{Maxwell-Boltzmann Statistics}
+\subsection{Definition}
+Maxwell-Boltzmann statistics is the classical approximation applicable when quantum effects are negligible—typically at high temperatures and low particle densities. Particles are considered distinguishable, and no quantum constraints apply.
+
+\subsection{Distribution Function}
+The Maxwell-Boltzmann distribution describes the number of particles at energy $E$:
+\begin{equation}
+f(E) = A e^{-E/kT}
+\end{equation}
+It serves as the foundational principle of classical thermodynamics and kinetic theory.
+
+\section{Comparative Study}
+\begin{table}[H]
+    \centering
+    \caption{Comparison of Quantum and Classical Statistics}
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        Property & Fermi-Dirac & Bose-Einstein & Maxwell-Boltzmann \\
+        \midrule
+        Particle Type & Fermions & Bosons & Classical Particles \\
+        State Occupancy & 0 or 1 & 0 to $\infty$ & 0 to $\infty$ \\
+        Pauli Principle & Yes & No & No \\
+        Wavefunction Symmetry & Antisymmetric & Symmetric & Not Applicable \\
+        Real-world Systems & Electrons in solids & Photons, BECs & Gases at room temperature \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Physical Interpretations}
+\subsection{Degeneracy Pressure}
+Degeneracy pressure is the resistance against compression arising due to the Pauli Exclusion Principle in fermions. It plays a crucial role in astrophysics by stabilizing stellar remnants.
+
+\subsection{Quantum Effects at Low Temperatures}
+At low temperatures, quantum statistics become significantly different from classical predictions. For fermions, low energy states fill up completely, while bosons tend to cluster in the lowest energy state.
+
+\section{Real-World Applications}
+\begin{itemize}
+    \item \textbf{Semiconductor Devices}: Understanding carrier distributions using Fermi-Dirac statistics.
+    \item \textbf{Quantum Computing}: Manipulation of quantum states follows bosonic and fermionic rules.
+    \item \textbf{Cryogenics and Superconductivity}: Quantum statistics help explain zero-resistance states.
+    \item \textbf{Astrophysics and Cosmology}: Stellar structure, early universe conditions, and cosmic background radiation are modeled using quantum distributions.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ss.png}
+    \caption{quantum computing}
+\end{figure}
+
+\section{Graphs and Visualization}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{distribution_curves.png}
+    \caption{Comparison of Fermi-Dirac, Bose-Einstein, and Maxwell-Boltzmann Distributions at the Same Temperature}
+\end{figure}
+
+\section{Conclusion}
+Quantum statistics not only bridges the gap between microscopic quantum behavior and macroscopic thermodynamic properties, but also offers a profound understanding of many natural phenomena. By distinguishing between fermions and bosons and applying the correct statistical model, scientists and engineers can design devices, understand stellar evolution, and even explore new states of matter such as Bose-Einstein condensates. The implications of these principles span from everyday technologies to the frontiers of fundamental research.
+
+\section{References}
+\begin{itemize}
+    \item Griffiths, D.J. \textit{Introduction to Quantum Mechanics}
+    \item Pathria, R.K., \textit{Statistical Mechanics}
+    \item Feynman, R.P., \textit{The Feynman Lectures on Physics}
+    \item Kittel, C. and Kroemer, H. \textit{Thermal Physics}
+    \item Mandl, F. \textit{Statistical Physics}
+\end{itemize}
+
+\end{document}

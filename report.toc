@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Mathematical Foundations}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Basic Concepts}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Density of States and Partition Function}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Classification of Particles}{4}{section.3}%
+\contentsline {section}{\numberline {4}Fermi-Dirac Statistics}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Definition}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Distribution Function}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Applications}{5}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Bose-Einstein Statistics}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Definition}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Distribution Function}{6}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Applications}{6}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Maxwell-Boltzmann Statistics}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Definition}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Distribution Function}{6}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Comparative Study}{7}{section.7}%
+\contentsline {section}{\numberline {8}Physical Interpretations}{7}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Degeneracy Pressure}{7}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Quantum Effects at Low Temperatures}{7}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Real-World Applications}{7}{section.9}%
+\contentsline {section}{\numberline {10}Graphs and Visualization}{8}{section.10}%
+\contentsline {section}{\numberline {11}Conclusion}{9}{section.11}%
+\contentsline {section}{\numberline {12}References}{9}{section.12}%
